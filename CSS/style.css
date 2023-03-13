@@ -15,3 +15,29 @@
     width: 100%;
     background-color: var(--baby-powder);
 }
+
+.login-title{
+    color: var(--persian-indigo);
+}
+
+.container{
+    border: 1px solid var(--persian-indigo);
+    box-shadow: 0px 0px 11px 0px #340068ff;
+}
+
+.form-control:focus{
+    box-shadow: transparent;
+}
+
+.btn-custom{
+    border: 1px solid var(--persian-indigo);
+    color: var(--persian-indigo);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.btn-custom:hover{
+    color: var(--baby-powder);
+    background-color: var(--persian-indigo);
+}
