@@ -16,40 +16,50 @@
 <body>
 
     <!-- area applicazione -->
-    <div class="wrapper d-flex justify-content-center debug">
+    <div class="wrapper p-5">
 
-        <!-- area di autenticazione -->
-        <div class="box-login d-flex flex-column debug p-3 w-25 text-center">
+        <!-- area registrazione accesso -->
+        <div class="card w-25 border-opacity-25 shadow m-auto border-primary-subtle">
 
-            <!-- titolo del gioco -->
-            <h3>Gioco dei dadi</h3>
-             <!-- /titolo del gioco -->
+            <!-- pannello -->
+            <div class="card-body">
 
-            <!-- input utente -->
-            <div class="box debug">
-                <!-- email utente -->
-                <input type="email" name="userEmail" id="uEmail" class="w-100" placeholder="Inserici la tua email">
-                <!-- /email utente -->
+                <h5 class="card-title display-6 text-center fw-semibold text-primary-emphasis">Il gioco dei dadi</h5>
 
-                <!-- box bottoni -->
-                <div class="btns p-3">
+                <form action="#">
 
-                    <!-- pulsante accedi -->
-                    <button id="logIn" class="px-3 custom-btn">Accedi</button>
-                    <!-- /pulsante accedi -->
+                    <!-- user email -->
+                    <div class="mb-3">
+                        <input type="email" class="form-control shadow-none border-0 border-bottom border-primary-subtle text-primary-emphasis" placeholder="inserire email" required>
+                    </div>
+                    <!-- /user email -->
 
-                    <!-- pulsante registrati -->
-                    <button id="signUp" class="custom-btn">Registrati</button>
-                    <!-- /pulsante registrati -->
+                    <div class="box d-flex">
 
-                </div>
-                <!-- /box bottoni -->
+                        <!-- validation -->
+                        <div class="mb-3">
+                            <button type="submit" id="verify" class="btn btn-outline-primary mb-3">Accedi</button>
+                        </div>
+                        <!-- /validation -->
+
+                        <!-- signup -->
+                        <div class="mb-3 px-4">
+                            <button type="submit" id="signup" class="btn btn-outline-secondary mb-3">Registrati</button>
+                        </div>
+                        <!-- /signup -->
+
+                        <div class="response" id="feedback"></div>
+
+                    </div>
+                    
+
+                </form>
 
             </div>
-            <!-- /input utente -->
+            <!-- /pannello -->
 
         </div>
-        <!-- /area di autenticazione -->
+        <!-- /area registrazione accesso -->
 
     </div>
     <!-- /area applicazione -->
