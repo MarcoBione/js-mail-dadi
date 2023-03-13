@@ -11,13 +11,3 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 */
-
-
-//list of players
-let usersList = [
-    "marcobione99@gmail.com",
-    "administ@game.com",
-
-];
-//checkuserlist
-console.log(usersList);
