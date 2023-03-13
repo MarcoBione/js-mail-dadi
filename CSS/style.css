@@ -1,0 +1,17 @@
+/* color palette */
+:root{
+    --persian-indigo: #340068ff;
+    --bright-pink-crayola: #ff6978ff;
+    --baby-powder: #fffcf9ff;
+    --celeste: #b1ede8ff;
+    --eggplant: #6d435aff;
+}
+
+
+
+/* main page wrapper */
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--baby-powder);
+}
