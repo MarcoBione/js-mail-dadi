@@ -11,3 +11,41 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 */
+
+
+// Array delle email
+let emailList = [
+    "marco@bione.com",
+    "admin@admin.com",
+    "guest@player.com"
+];
+console.log(emailList);
+
+// form listener
+document.querySelector('form').addEventListener('submit', function(event) {
+    // do not send the form
+    event.preventDefault();
+    
+    // take data from form
+    let newPlayer = document.getElementById('uEmail').value;
+    
+    // Check presence of the player
+    if (emailList.indexOf(newPlayer) > -1) {
+        document.getElementById('feedback').innerHTML=`
+        <p class="text-primary fs-5">Sembra che te sia gia registrato!</p>
+        `;
+
+
+
+    } else {
+        // add newplayer to array
+        emailList.push(newPlayer);
+
+        //display success message
+        document.getElementById('feedback').innerHTML=`
+        <p class="text-primary fs-5">Sembra che te sia debba acora registrarti!</p>
+        `;
+        console.log(emailList);
+    }
+});
+console.log(emailList);
