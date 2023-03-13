@@ -6,3 +6,7 @@
     --celeste: #b1ede8ff;
     --eggplant: #6d435aff;
 }
+
+.debug{
+    outline: 1px solid red;
+}
