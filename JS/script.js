@@ -37,6 +37,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
         </div>
         `;
 
+        let newGame = document.getElementById("play");
+        newGame.addEventListener('click', dice);
     } else {
         //display success message
         document.getElementById('feedback').innerHTML=`
@@ -45,6 +47,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
         const newPlayer = document.getElementById("signup");
         newPlayer.addEventListener('click', register);
         console.log(emailList);
+
+        let newGame = document.getElementById("play");
+        newGame.addEventListener('click', dice);
     };
 });
-console.log(emailList);
+
+
